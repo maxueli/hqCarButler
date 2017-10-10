@@ -1,0 +1,14 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>选择年款设置</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item-group *ngFor="let items of types">
+            <ion-item-divider class="type-title" color="light">{{items.title}}</ion-item-divider>
+            <ion-item [class.checkedradio]='item===brandtypechecked' class="type-cont" *ngFor="let item of items.value" (click)='jumpToWriteCarInfo(item)'>{{item}}</ion-item>
+        </ion-item-group>
+    </ion-list>
+</ion-content>

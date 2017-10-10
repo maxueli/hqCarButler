@@ -1,0 +1,157 @@
+ion-item-divider{
+    min-height: 20px;
+}
+page-about {
+    .scroll-content{
+        margin-top: 44px !important;
+    }
+    // .show-page{
+    //     top: 85px;
+    // }
+    .ion-item-divider{
+        min-height: 20px !important;
+    }
+    .item-ios-light, .item-divider-ios-light{
+        font-size: 1.3rem !important;
+        height: 20px !important;
+    }
+    .item-ios{
+        font-size: 1.5rem;
+    }
+    .item-block{
+        min-height: 44px !important;
+    }
+    .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block{
+        border: 0;
+
+    }
+    .list-ios > .item-block:first-child{
+        border: 0;
+    }
+    .list-ios{
+        margin: 0;
+    }
+    .checkedradio{
+        color: #fa5a4b;
+        background: #f7f7f9;
+    }
+    .car-brand-info{
+        width: 65%;
+        height: 100%;
+        // border: 1px solid #000;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        background:#f4f4f8;
+        overflow: scroll;
+        
+
+    }
+    .listcontent{
+        margin-top: 52px;
+    }
+    
+    .grid{
+        border-bottom: .5px solid #c8c7cc !important;
+        background:#fff;
+    }
+    .modelbox{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 98px;
+        bottom: 0;
+        z-index: 100;
+        display: block;
+        padding-left: 0px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        // opacity: 1;
+        background: rgba(0, 0, 0, .8);
+        .modal-dialog{
+            // transform: translate(0,0);
+            // transition: transform .3s ease-out;
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            // padding-top: 40px;
+            .modal-content{
+                height: 466px;
+                // min-height: 400px;
+                overflow: scroll;
+                background: #fff;
+            }
+        }
+    }
+    .brandbtn .actived{
+        // content: "\f3d0";
+        color: #fa5a4b !important;
+    }
+    .grid .row > :first-child{
+        border-right: .5px solid #ededee !important;
+    }
+    .item-ios ion-thumbnail ion-img, .item-ios ion-thumbnail img{
+        width: 75px;
+        height: 75px;
+    }
+    .item-ios h3{
+        margin: 0 0 0;
+    }
+    .item-ios p{
+        margin: 0 0 0;
+    }
+    .imgicon img{
+        width: 28px;
+        height: 28px;
+        vertical-align: middle;
+    }
+    .address{
+        font-size: 12px;
+    }
+    .bar-buttons>button{
+        background: transparent;
+        font-size: 15px;
+        color: #666;
+    }
+    .grid{
+        border-bottom: .5px solid #666;
+        .row>:first-child{
+            border-right: .5px solid #666;
+        }
+        .col{
+            text-align: center;
+            color: #666666;
+        }
+        
+    }
+    p{
+        width: 100%;
+    }
+    .icon-group{
+        position: relative;
+        // top: -5px;
+        font-size: .16rem;
+        color: #ffa028;
+        .score-words{
+            // font-size: 2.16rem;
+            font-size: 1.5rem;
+            .score{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .distance{
+        position: absolute;
+        right: 23px;
+        bottom: 14px;
+    }
+    .discount{
+        color: #fa5a4b;
+    }
+    .disconut-num {
+        font-size: 2.16rem;
+        position: relative;
+        top: -1px;
+    }
+}

@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>当前城市</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<div class="top-wrap">
+    <div class="top-cont">
+        <ion-icon name="pin" class="icon-pin"></ion-icon>定位失败，点击重试
+    </div>
+    <div class="hot-city">
+        <p>热门城市</p>
+        <div>
+            <p *ngFor="let item of hotCitys" (click)='chooseLocation(item.value)'>{{item.value}}</p>
+        </div>
+    </div>
+</div>
+
+<!--<ion-list>
+        <ion-item-group class="cityItem" *ngFor="let items of citys">
+            <ion-item-divider color="light">{{items.title}}</ion-item-divider>
+            <ion-item *ngFor="let item of items.value" (click)='chooseLocation(item)'>{{item}}</ion-item>
+        </ion-item-group>
+    </ion-list>-->
+<!--<ul class="char-nav vertical-center">
+        <li># </li>
+        <li>B </li>
+        <li>C </li>
+        <li>D </li>
+        <li>F </li>
+        <li>G </li>
+        <li>H </li>
+        <li>J </li>
+        <li>K </li>
+        <li>N </li>
+        <li>Q </li>
+        <li>S </li>
+        <li>T </li>
+        <li>W </li>
+        <li>X </li>
+        <li>Z </li>
+    </ul>-->
+<ion-content>
+    <ion-index-list>
+        <ion-index-section *ngFor="let items of citys" [index]="items.title">
+            <ion-index-cell *ngFor="let item of items.value" (click)='chooseLocation(item)' menuToggle block>
+                {{item}}
+            </ion-index-cell>
+        </ion-index-section>
+    </ion-index-list>
+</ion-content>

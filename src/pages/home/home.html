@@ -1,0 +1,283 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      乐车邦
+    </ion-title>
+    <ion-buttons start class="icon-location">
+      <button (click)="jumpToLocation()">
+          {{contacts}}
+          </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <!--轮播图-->
+  <ion-slides pager loop autoplay="2000" style="width: 100%;height: 150px;">
+    <ion-slide>
+      <img src="https://ocpvgmewj.qnssl.com/mkt_banner_ad/banner_ad_iphone_img/20170707/a5f1f590-ad1e-4574-accf-3b90b32929ae.png"
+        alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="https://ocpvgmewj.qnssl.com/mkt_banner_ad/banner_ad_iphone_img/20170706/451f3c48-64ed-4b5e-af46-58d469a7dba5.jpg"
+        alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="https://ocpvgmewj.qnssl.com/cf4696bb-17d3-4447-9927-2f3f8f2762f6.png" alt="">
+    </ion-slide>
+  </ion-slides>
+  <!--导航菜单-->
+  <ion-grid class="nav-cont">
+    <ion-row>
+      <ion-col width-20>
+        <div class="discount-tips">6.8折</div>
+        <p class="nav-pic">
+          <img src="https://ocpvgmewj.qnssl.com/5adbeef9-0b5b-4bb9-b99c-dc7ac05ec9b0.png" alt="">
+        </p>
+        <p class="nav-title">4S店保养</p>
+      </ion-col>
+      <ion-col width-20>
+        <p class="nav-pic">
+          <img src="https://ocpvgmewj.qnssl.com/43487882-0add-4dbe-a0c6-6db80a905653.png" alt="">
+        </p>
+        <p class="nav-title">钣金喷漆</p>
+      </ion-col>
+      <ion-col width-20>
+        <p class="nav-pic">
+          <img src="https://ocpvgmewj.qnssl.com/8c5a2d5e-e613-4483-b00f-e672a3378bdc.png" alt="">
+        </p>
+        <p class="nav-title">清洗养护</p>
+      </ion-col>
+      <ion-col width-20>
+        <p class="nav-pic">
+          <img src="https://ocpvgmewj.qnssl.com/99f8dd2d-6890-4ea9-b513-5737058dac98.png" alt="">
+        </p>
+        <p class="nav-title">原厂维修</p>
+      </ion-col>
+      <ion-col width-20>
+        <div class="discount-tips">折扣</div>
+        <p class="nav-pic">
+          <img src="https://ocpvgmewj.qnssl.com/d2e91ea8-8180-485a-a23f-96e7e6cbd589.png" alt="">
+        </p>
+        <p class="nav-title">加油</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-20>
+        <div class="discount-tips">优惠</div>
+        <p class="nav-pic">
+          <img src="https://ocpvgmewj.qnssl.com/mkt_banner_ad/banner_ad_iphone_img/20170716/71f1d13d-33a3-42f9-b264-06265d844cdf.png"
+            alt="">
+        </p>
+        <p class="nav-title">洗车</p>
+      </ion-col>
+      <ion-col width-20>
+        <p class="nav-pic">
+          <img src="https://ocpvgmewj.qnssl.com/3de6399f-b084-41b7-a93a-1c973df273c5.png" alt="">
+        </p>
+        <p class="nav-title">更换电瓶</p>
+      </ion-col>
+      <ion-col width-20>
+        <p class="nav-pic">
+          <img src="https://ocpvgmewj.qnssl.com/6025351c-f12c-41e6-929b-9408e828faa0.png" alt="">
+        </p>
+        <p class="nav-title">违章代缴</p>
+      </ion-col>
+      <ion-col width-20>
+        <p class="nav-pic">
+          <img src="https://dn-lcbresource.qbox.me/cac526e8-9f97-4617-a546-9420c127826b.png" alt="">
+        </p>
+        <p class="nav-title">智慧停车</p>
+      </ion-col>
+      <ion-col width-20>
+        <p class="nav-pic">
+          <img src="https://ocpvgmewj.qnssl.com/4d696673-27d7-414b-ae58-bceacbaf3dc9.png" alt="">
+        </p>
+        <p class="nav-title">积分商城</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!--头条-->
+  <div class="headlines">
+    <div class="headlines-title">
+      <p class="headlines-title-logo">
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1506080309396&di=408c4df244408536f69b990a82386f24&imgtype=0&src=http%3A%2F%2Fupload.techweb.com.cn%2F2016%2F0204%2F1454591229628.png"
+          alt="">
+          <span style="height:30px;float: right;color: #ddd;">|</span>
+      </p>
+    </div>
+    <div class="headlines-cont">
+      <ion-slides loop autoplay="2000" direction="vertical">
+        <ion-slide class="headlines-cont-txt" (click)="jumpTopic()">
+          不收费的“高速公路”，秋天自驾美爆了！
+        </ion-slide>
+        <ion-slide class="headlines-cont-txt" (click)="jumpTopic()">
+          熄火后不能插车充，这7大误区你中招了吗
+        </ion-slide>
+        <ion-slide class="headlines-cont-txt" (click)="jumpTopic()">
+          中央后视镜，老司机最看重的安全法宝
+        </ion-slide>
+      </ion-slides>
+    </div>
+  </div>
+  <!--活动-->
+  <div class="activities">
+    <div class="activity-item">
+      <div class="activity-pic" style="background-image: url(&quot;https://ocpvgmewj.qnssl.com/afa004e4-f799-4014-bfc0-454ef083e4d8.png&quot;);"></div>
+      <div class="show-dots">洗从天降 </div>
+      <div class="activity-tip show-dots" style="color: rgb(250, 90, 75);">12次免费洗车 </div>
+    </div>
+    <div class="activity-item">
+      <div class="activity-pic" style="background-image: url(&quot;https://ocpvgmewj.qnssl.com/mkt_banner_ad/banner_ad_iphone_img/20170702/c290593e-b157-4946-b705-273d5e8a4811.png&quot;);"></div>
+      <div class="show-dots">领588元 </div>
+      <div class="activity-tip show-dots" style="color: rgb(250, 90, 75);">新人养车礼包 </div>
+    </div>
+    <div class="activity-item">
+      <div class="activity-pic" style="background-image: url(&quot;https://ocpvgmewj.qnssl.com/d60a34b4-df8e-4ebc-a4fe-390a1febfe2d.png&quot;);"></div>
+      <div class="show-dots">评价有礼 </div>
+      <div class="activity-tip show-dots" style="color: rgb(250, 90, 75);">送养车现金 </div>
+    </div>
+    <div class="activity-item">
+      <div class="activity-pic" style="background-image: url(&quot;https://ocpvgmewj.qnssl.com/0b7394ce-ac71-4603-83a6-c1ff7009cb72.png&quot;);"></div>
+      <div class="show-dots">邀请有礼 </div>
+      <div class="activity-tip show-dots" style="color: rgb(250, 90, 75);">奖励20元 </div>
+    </div>
+  </div>
+  <!--热门保养-->
+  <ion-item class="hot">
+    <span class="hot-title">热门保养</span>
+    <span class="add-car" (click)="jumpAddCar()"><ion-icon name="add" class="icon-add"></ion-icon>添加爱车</span>
+  </ion-item>
+  <div class="brand-cont">
+    <div class="brand-cont-item">
+      <p class="brand-pic">
+        <img src="https://ocpvd5a60.qnssl.com/2e89006f-67a6-4e6d-ab65-a6f8540b0d79.png" alt="">
+      </p>
+      <p class="brand-price">￥427</p>
+    </div>
+    <div class="brand-cont-item">
+      <p class="brand-pic">
+        <img src="https://ocpvd5a60.qnssl.com/b7515315-5565-494b-82ef-362d1ae103e1.png" alt="">
+      </p>
+      <p class="brand-price">￥333</p>
+    </div>
+    <div class="brand-cont-item">
+      <p class="brand-pic">
+        <img src="https://ocpvd5a60.qnssl.com/c9607cae-7c28-44b7-91c3-b2132f4cc9ab.png" alt="">
+      </p>
+      <p class="brand-price">￥326</p>
+    </div>
+    <div class="brand-cont-item">
+      <p class="brand-pic">
+        <img src="https://ocpvd5a60.qnssl.com/ecf658b5-5406-47ea-82c7-fa3c661f4d32.png" alt="">
+      </p>
+      <p class="brand-price">￥753</p>
+    </div>
+    <div class="brand-cont-item">
+      <p class="brand-pic">
+        <img src="https://ocpvd5a60.qnssl.com/e7a5ea6b-cfcc-4db7-824d-5c2cacf120a0.png" alt="">
+      </p>
+      <p class="brand-price">￥123</p>
+    </div>
+    <div class="brand-cont-item">
+      <p class="brand-pic">
+        <img src="https://ocpvd5a60.qnssl.com/3f1fa15b-b3b5-48c8-8391-cd4051781e6d.png" alt="">
+      </p>
+      <p class="brand-price">￥45</p>
+    </div>
+    <div class="brand-cont-item">
+      <p class="brand-pic">
+        <img src="https://ocpvd5a60.qnssl.com/car/brand_logo/20170721/55273f43-8de9-4e21-9a8e-c73bcca2e784.png" alt="">
+      </p>
+      <p class="brand-price">￥77</p>
+    </div>
+    <div class="brand-cont-item">
+      <p class="brand-pic">
+        <img src="https://ocpvd5a60.qnssl.com/dac84f53-862e-416c-bc0e-29b0af3fe4eb.png" alt="">
+      </p>
+      <p class="brand-price">￥231</p>
+    </div>
+    <!-- 添加更多品牌 -->
+    <div class="brand-cont-item" [hidden]="brandHidden">
+      <p class="brand-pic">
+        <img src="https://ocpvd5a60.qnssl.com/b7515315-5565-494b-82ef-362d1ae103e1.png" alt="">
+      </p>
+      <p class="brand-price">￥333</p>
+    </div>
+    <div class="brand-cont-item" [hidden]="brandHidden">
+      <p class="brand-pic">
+        <img src="https://ocpvd5a60.qnssl.com/c9607cae-7c28-44b7-91c3-b2132f4cc9ab.png" alt="">
+      </p>
+      <p class="brand-price">￥326</p>
+    </div>
+    <div class="brand-cont-item" [hidden]="brandHidden">
+      <p class="brand-pic">
+        <img src="https://ocpvd5a60.qnssl.com/ecf658b5-5406-47ea-82c7-fa3c661f4d32.png" alt="">
+      </p>
+      <p class="brand-price">￥753</p>
+    </div>
+    <div class="brand-cont-item" [hidden]="brandHidden">
+      <p class="brand-pic">
+        <img src="https://ocpvd5a60.qnssl.com/e7a5ea6b-cfcc-4db7-824d-5c2cacf120a0.png" alt="">
+      </p>
+      <p class="brand-price">￥123</p>
+    </div>
+    <div class="brand-cont-item" [hidden]="brandHidden">
+      <p class="brand-pic">
+        <img src="https://ocpvd5a60.qnssl.com/3f1fa15b-b3b5-48c8-8391-cd4051781e6d.png" alt="">
+      </p>
+      <p class="brand-price">￥45</p>
+    </div>
+    <div class="brand-cont-item" [hidden]="brandHidden">
+      <p class="brand-pic">
+        <img src="https://ocpvd5a60.qnssl.com/car/brand_logo/20170721/55273f43-8de9-4e21-9a8e-c73bcca2e784.png" alt="">
+      </p>
+      <p class="brand-price">￥77</p>
+    </div>
+    <div class="brand-cont-item" [hidden]="brandHidden">
+      <p class="brand-pic">
+        <img src="https://ocpvd5a60.qnssl.com/dac84f53-862e-416c-bc0e-29b0af3fe4eb.png" alt="">
+      </p>
+      <p class="brand-price">￥231</p>
+    </div>
+  </div>
+  <ion-item class="more">
+    <span class="more-brands" (click)="showMoreBrands()">{{brandHiddenTxt}} <span class="icon-more">></span>
+    <!--<ion-icon name="arrow-dropright-circle" class="icon-right"></ion-icon>-->
+    </span>
+  </ion-item>
+  <!--车主评价-->
+  <ion-item class="advice">
+    <span class="advice-title">车主评价</span>
+  </ion-item>
+  <ion-list>
+    <ion-item class="advice-list" *ngFor="let i of items" (click)='jumpDetail(i)'>
+      <ion-card class="advice-cont">
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="https://ocpvgmewj.qnssl.com/market/920fengbao/imgs/man29265845e3.png">
+          </ion-avatar>
+          <h2>151****3500 {{i}}</h2>
+          <p class="time">2017-9-23 17:52</p>
+        </ion-item>
+        <ion-card-content class="advice-card-cont">
+          <p class="car-type">车型:比亚迪 速锐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;花费:￥566 <span>（省￥229）</span></p>
+          <p class="car-cont">去时人比较少，10分钟就轮到俺车了。大玻璃窗可以看到保养进程，保养师傅比较用心，接待的小兄弟很仔细，核对了保养项目，花费明细等所... <span>更多</span></p>
+          <p class="advice-pic">
+            <img src="https://ocpvh3dgz.qnssl.com/public/2017/9/24/3ffdad3784776d6e2da4b4763d36386f.jpg-thumbnail">
+            <img src="https://ocpvh3dgz.qnssl.com/public/2017/9/24/3ffdad3784776d6e2da4b4763d36386f.jpg-thumbnail">
+            <img src="https://ocpvh3dgz.qnssl.com/public/2017/9/24/3ffdad3784776d6e2da4b4763d36386f.jpg-thumbnail">
+            <img src="https://ocpvh3dgz.qnssl.com/public/2017/9/24/3ffdad3784776d6e2da4b4763d36386f.jpg-thumbnail">
+          </p>
+        </ion-card-content>
+        <p class="store">
+          <ion-icon name="pricetag" class="icon-pricetag"></ion-icon>天津银诺臣东风悦达起亚4S店</p>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+  <!-- 下拉加载 -->
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="加载更多...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+</ion-content>

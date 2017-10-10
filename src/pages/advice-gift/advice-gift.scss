@@ -1,0 +1,154 @@
+page-advice-gift {
+    .scroll-content {
+        background: #f4f4f8;
+    }
+    // 初始化item-inner样式
+    .item-ios.item-block .item-inner {
+        padding-right: 0;
+        border-bottom: none;
+    }
+    .item-md.item-block .item-inner {
+        padding-right: 0;
+        border-bottom: none;
+    }
+    .gift {
+        .gift-title {
+            font-size: 1.5rem;
+        }
+    }
+    .sa-banner {
+        width: 100%;
+        height: 24rem;
+        background: url(https://img06.lechebangstatic.com/webapp/order/11e368af4b96.png) no-repeat center center;
+        background-size: 100% 100%;
+    }
+    .sa-wrap {
+        padding-bottom: 10px;
+        background: #ffffff;
+        margin-bottom: 10px;
+        div {
+            width: 100%;
+            height: 6.8rem;
+            background: url(https://img06.lechebangstatic.com/webapp/order/9ffc7e76090.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+    }
+    .sa-text-wrap {
+        margin-bottom: 10px;
+        div:first-child {
+            width: 100%;
+            height: 10.8rem;
+            background: url(https://img06.lechebangstatic.com/webapp/order/8436768eec9.png) no-repeat center center;
+            background-size: 100% 100%;
+        }
+        div:last-child {
+            position: relative;
+            background: #ffffff;
+            padding: 1rem 1.5rem 1rem 2.2rem;
+            color: #666;
+        }
+    }
+    // 精选案例
+    .advice-case {
+        padding: 0;
+        span {
+            font-size: 1.6rem;
+            padding-left: 15px;
+        }
+    }
+    .advice-list{
+        padding: 0;
+        margin-bottom: 10px;
+        border-bottom: none;
+        >div.item-inner {
+            border-bottom: none;
+        }
+        .advice-cont {
+            margin: 0;
+            width: 100%;
+            box-shadow: none;
+            .time {
+                color: #999999;
+                font-size: 1.2rem;
+            }
+            .advice-card-cont {
+                padding-right: 0;
+                .car-type {
+                    color: #999999;
+                    font-size: 1.2rem;
+                    margin-bottom: 10px;
+                    >span {
+                        color: #fa5a4b;
+                    }
+                }
+                .car-cont {
+                    padding-bottom: .6rem;
+                    white-space: normal;
+                    font-size: 1.5rem;
+                    color: #333;
+                }
+                .advice-pic {
+                    text-align: center;
+                    width: 100%;
+                    overflow: hidden;
+                    >div {
+                        width: 30%;
+                        float: left;
+                        margin: 1% 1.5%;
+                    }
+                }
+            }
+        }
+    }
+    .form-wrap {
+        padding: 0.5rem 1.5rem 1rem;
+        background: #fff;
+        margin-bottom: 5rem;
+        position: relative;
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: .5rem;
+        }
+        .font-xs {
+            font-size: 1.3rem;
+            color: #666;
+            padding-left: 1rem;
+            li {
+                list-style: none;
+                list-style-type: decimal;
+                list-style-position: outside;
+                margin-bottom: .5rem;
+                text-align: justify;
+            }
+        }
+    }
+    // 按钮
+    .page-top, .page-bottom {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 5;
+        .sa-btn {
+            width: 100%;
+            border: 1px solid #fa5a4b;
+            font-size: 1.8rem;
+            font-weight: 600;
+            padding: .9rem 0;
+            position: relative;
+            background-color: #fa5a4b;
+            color: #fff;
+        }
+        .sa-btn::after {
+            content: "";
+            position: absolute;
+            width: .7rem;
+            height: .7rem;
+            border-top: 1px solid #fff;
+            border-right: 1px solid #fff;
+            top: 50%;
+            -webkit-transform: rotate(45deg) translateY(-60%);
+            transform: rotate(45deg) translateY(-60%);
+        }
+    }
+}

@@ -1,0 +1,218 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      4S店
+    </ion-title>
+    <ion-buttons end (click)='jumpjoin()'>
+      <button>
+          加盟
+        </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-grid class="brandfixed">
+      <ion-row class="brandbtn">
+        <ion-col col-6 [class.actived]='pet=="品牌"' (click)='getbrand($event)'>品牌
+          <ion-icon name="{{pet=='品牌'?'ios-arrow-up':'ios-arrow-down'}}" isActive="false"></ion-icon>
+        </ion-col>
+        <ion-col col-6 [class.actived]='pet=="推荐排序"' (click)='sortlist($event)'>推荐排序
+          <ion-icon name="{{pet=='推荐排序'?'ios-arrow-up':'ios-arrow-down'}}" isActive="false"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-header>
+
+<ion-content>
+  <ion-list class="listcontent">
+    <ion-item *ngFor="let i of items" (click)='jumpDetail(i)'>
+      <ion-thumbnail item-start>
+        <img src="https://ocpvh3dgz.qnssl.com/1245fccf-77cb-48bf-86a6-548efe0d68aa.png-withLogo750x400">
+      </ion-thumbnail>
+      <h3>成都万友东辰长安4S店({{i}})</h3>
+      <p class="imgicon">
+        <img src="https://ocpvd5a60.qnssl.com/51d1d5d2-5545-470c-8ef7-20945ae7c5d7.png" alt="">
+        <img src="https://ocpvd5a60.qnssl.com/84789590-660c-4dc5-b668-8c6d825b48a5.png" alt="">
+      </p>
+      <p class="icon-group">
+        <ion-icon name="ios-star" isActive="true"></ion-icon>
+        <ion-icon name="ios-star" isActive="true"></ion-icon>
+        <ion-icon name="ios-star" isActive="true"></ion-icon>
+        <ion-icon name="ios-star" isActive="true"></ion-icon>
+        <ion-icon name="ios-star" isActive="true"></ion-icon>
+        <span class="score-words">
+                        5
+                        <span class="score">分</span>
+        </span>
+      </p>
+      <p class='address-distance'>
+        <!-- <span class="distance">1386.5km</span> -->
+        <span class="address">成都市成华区迎晖路157号</span>
+      </p>
+      <button ion-button clear item-end class="discount">
+                    <span class="disconut-num">5</span>
+                    折起
+                  </button>
+    </ion-item>
+  </ion-list>
+
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="加载更多...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+</ion-content>
+<div [ngSwitch]="pet" class="brandcontent">
+  <ion-list *ngSwitchCase="'品牌'">
+    <div class="modelbox">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <ion-list radio-group>
+            <ion-item>
+              <ion-label>品牌不限</ion-label>
+              <ion-radio #radiobrand value="brand" (click)='getradiobarand(radiobrand)'></ion-radio>
+            </ion-item>
+          </ion-list>
+          <ion-item-group *ngFor="let items of brands">
+            <ion-item-divider color="light">{{items.title}}</ion-item-divider>
+            <ion-item [class.checkedradio]='item===brandinfochecked' *ngFor="let item of items.value" (click)='getbrandInfo(item)'>{{item}}</ion-item>
+          </ion-item-group>
+          <div class="car-brand-info" *ngIf="brandinfoShow">
+            <ion-list radio-group>
+              <ion-item>
+                <ion-label>Go</ion-label>
+                <ion-radio checked="true" value="go"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Rust</ion-label>
+                <ion-radio value="rust"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Go</ion-label>
+                <ion-radio checked="true" value="go"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Rust</ion-label>
+                <ion-radio value="rust"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Go</ion-label>
+                <ion-radio checked="true" value="go"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Rust</ion-label>
+                <ion-radio value="rust"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Go</ion-label>
+                <ion-radio checked="true" value="go"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Rust</ion-label>
+                <ion-radio value="rust"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Go</ion-label>
+                <ion-radio checked="true" value="go"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Rust</ion-label>
+                <ion-radio value="rust"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Go</ion-label>
+                <ion-radio checked="true" value="go"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Rust</ion-label>
+                <ion-radio value="rust"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Go</ion-label>
+                <ion-radio checked="true" value="go"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Rust</ion-label>
+                <ion-radio value="rust"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Go</ion-label>
+                <ion-radio checked="true" value="go"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Rust</ion-label>
+                <ion-radio value="rust"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Go</ion-label>
+                <ion-radio checked="true" value="go"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Rust</ion-label>
+                <ion-radio value="rust"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Go</ion-label>
+                <ion-radio checked="true" value="go"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Rust</ion-label>
+                <ion-radio value="rust"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Go</ion-label>
+                <ion-radio checked="true" value="go"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Rust</ion-label>
+                <ion-radio value="rust"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Go</ion-label>
+                <ion-radio checked="true" value="go"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>Rust</ion-label>
+                <ion-radio value="rust"></ion-radio>
+              </ion-item>
+
+
+            </ion-list>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-list>
+  <ion-list *ngSwitchCase="'推荐排序'">
+    <div class="modelbox">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <ion-list radio-group>
+
+            <ion-item>
+              <ion-label>Go</ion-label>
+              <ion-radio checked="true" value="go"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <ion-label>Rust</ion-label>
+              <ion-radio value="rust"></ion-radio>
+            </ion-item>
+
+
+          </ion-list>
+        </div>
+      </div>
+    </div>
+  </ion-list>
+</div>

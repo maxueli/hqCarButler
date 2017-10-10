@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>选品牌</ion-title>
+    </ion-navbar>
+</ion-header>
+<div class="black-overlay-top"></div>
+<ion-menu  class="brand-slider" type="overlay" [content]="content" side='right' (ionOpen)="menuOpened()" (ionClose)="menuClosed()">
+    <ion-content>
+        <ion-list>
+            <ion-item-group *ngFor="let items of pages">
+                <ion-item-divider class="menu-type-title" color="light">{{items.title}}</ion-item-divider>
+                <ion-item [class.checkedradio]='item===brandchecked' class="menu-type-cont" *ngFor="let item of items.value" (click)='openPage(item)'>{{item}}</ion-item>
+            </ion-item-group>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+<ion-content>
+    <ion-index-list>
+        <ion-index-section *ngFor="let items of brands" [index]="items.title">
+            <ion-index-cell *ngFor="let item of items.value" (click)='menuOpened()' menuToggle block>
+                {{item}}
+            </ion-index-cell>
+        </ion-index-section>
+    </ion-index-list>
+</ion-content>

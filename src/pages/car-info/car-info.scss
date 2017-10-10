@@ -1,0 +1,183 @@
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #ccc;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #ccc;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #ccc;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #ccc;
+}
+
+.datetime-text {
+    font-size: 1.3rem;
+    position: absolute;
+    left: 40%;
+    top: 16px;
+    color: #ccc;
+}
+
+page-car-info {
+    .nav-bar {
+        width: 100%;
+        height: 51px;
+        background: #fa5a4b;
+        line-height: 51px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: 700;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .scroll-content {
+        background: #f4f4f8;
+    }
+    .desc {
+        padding: 8px 15px;
+        color: #999;
+        font-size: 1.2rem;
+    }
+    .carinfo-list {
+        .item-left {
+            font-size: 1.4rem;
+            display: inline-block;
+            width: 37%;
+            color: #000;
+        }
+        .city {
+            color: #666;
+        }
+        span {
+            font-size: 1.3rem;
+            color: #ccc;
+            width: 60%;
+            display: inline-block;
+            margin-right: .1rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        ion-icon[item-right] {
+            font-size: 1.3rem;
+            line-height: 34px;
+            color: #ccc;
+            margin-bottom: 2px;
+        }
+        input {
+            color: #000;
+            width: 50px;
+            height: 51px;
+            border: 0 !important;
+            padding: 0 !important;
+        }
+        .label {
+            margin: 0;
+        }
+    }
+    .pros-intro::after {
+        content: '';
+        position: absolute;
+        background: #ccc;
+        height: 1px;
+        left: .7rem;
+        right: .7rem;
+        top: 2.1rem;
+    }
+    .pros-intro {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box; // padding: 0 6rem;
+        color: #666;
+        text-align: center;
+        overflow: hidden;
+        width: 255px;
+        margin: 0 auto;
+        .car-title {
+            margin-bottom: 1rem;
+            h4 {
+                display: inline-block;
+                height: 1.2rem;
+                line-height: 1.2rem;
+                padding: 0 1rem;
+                background: #f4f4f8;
+                position: relative;
+                z-index: 1;
+                color: #999;
+                font-weight: 400;
+                font-size: 1.4rem;
+            }
+            h4::before {
+                transform: translateX(-13px);
+                content: '';
+                position: absolute;
+                width: .5rem;
+                height: .5rem;
+                background: #ccc;
+                border-radius: 50%;
+                top: 22%;
+            }
+            h4::after {
+                transform: translateX(73px);
+                content: '';
+                position: absolute;
+                width: 0.5rem;
+                height: 0.5rem;
+                background: #ccc;
+                border-radius: 50%;
+                top: 22%;
+            }
+        }
+        .flex-wrap {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            li {
+                margin: 0;
+                padding: 0;
+                flex: 1; // display: inline-block;
+                .icon-item {
+                    height: 4.5rem;
+                    width: 4.5rem;
+                    line-height: .45rem;
+                    -webkit-border-radius: 50%;
+                    border-radius: 50%;
+                    background-color: #c3f0ff;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    line-height: 4.5rem;
+                    font-size: 2.5rem;
+                }
+                .txt {
+                    margin-top: 0.5rem;
+                    color: #b9b9b9;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    .list-ios>.item-block:first-child {
+        border-top: .55px solid rgba(0, 0, 0, 0.04);
+    }
+    .list-ios>.item-block:last-child,
+    .list-ios>.item-wrapper:last-child .item-block {
+        border-bottom: 0.55px solid rgba(0, 0, 0, 0.04);
+    }
+    .list-ios .item-block .item-inner {
+        border-bottom: 0.55px solid rgba(0, 0, 0, 0.04);
+    }
+}

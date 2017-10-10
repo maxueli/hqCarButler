@@ -1,0 +1,214 @@
+.nav-tabs{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background: #fff;
+    box-shadow: inset 1px 1px 0 rgba(0,0,0,0.05);
+    .tabs-item{
+        flex: 1;
+        line-height: 50px;
+        text-align: center;
+    }
+    .tabs-maintain{
+        flex: 0 0 138.75px;
+        background: #fa5a4b;
+        background-color: #fa5a4b;
+        color: #fff;
+        font-size: 1.8rem;
+        // height: .5rem;
+        border: none;
+    }
+    
+}
+page-store-detail {
+    
+    .imgicon{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        vertical-align: bottom;
+    }
+    .selected{
+        background-color: #ffa028;
+        color: #fff;
+    }
+    .label-ios{
+        margin: 7px 8px 7px 0;
+    }
+    .item-block{
+        min-height: 35px;
+    }
+    .scroll-content{
+        background: #f4f4f8;
+    }
+    .card-ios{
+        margin: 0;
+        width: 100%;
+    }
+    .swiper-slide{
+        width: 100% !important;
+    }
+    .score{
+        color: #ff6e37;
+        font-size: 2.17rem;
+        margin-left: .05rem;
+        margin-right: .04rem;
+        vertical-align: 7%;
+    }
+    .score::after {
+        content: '分';
+        font-size: .12rem;
+        margin-left: -0.05rem;
+        // vertical-align: 41%;
+    }
+    .phone{
+        position: absolute;
+        font-size: 1.6rem;
+        color: #ccc;
+        right: 20px;
+    }
+    .address{
+        position: absolute;
+        right: 20px;
+        font-size: 1.6rem;
+        color: #ccc;
+    }
+    .Hot{
+        margin-top: 10px;
+        .input-wrapper{
+            // box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+        }
+        .col{
+            text-align: center;
+            .car-logo{
+                width: 142px;
+                height: 86px;
+                margin: 0 auto;
+            }  
+            .car-name{
+                margin: 10px auto .02rem;
+                width: 142px;
+            }
+            s{
+                font-size: 1.4rem;
+            }
+            .cut-line{
+                margin-left: .5rem;
+            }
+            .real-price{
+                font-size: 1.7rem;
+                color: #fa5a4b;
+                .font-s{
+                    font-size: 1.3rem;
+                    margin-right: .05rem;
+                }
+                .fd-qi{
+                    font-size: .12rem;
+                }
+            }
+        }
+    }
+    .card-ios{
+        box-shadow: 0 0 0 0;
+    }
+
+    .card-header-ios + .card-content-ios, .card-ios .item + .card-content-ios{
+        padding-top: 14px;
+    }
+    .car-comment{
+        margin-top: 10px;
+        .card-content{
+            padding: 0;
+        }
+        .firstRow{
+            padding: 21px 0 16px 0;
+        }
+        .col{
+            padding:0;
+        }
+        .borderleft{
+            border-left: 1px #f1f1f1 solid;
+        }
+        .input-wrapper{
+            // box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+            border-bottom: 1px solid rgba(0,0,0,0.04);
+        }
+        .commentflex{
+            flex: 0 0 25%;
+            .overall-score{
+                font-size: 2.28rem;
+                color: #ff6e37;
+                .score-words{
+                    font-size: .14rem;
+                    margin-left: -.05rem;
+                }
+            }
+            .whole-comment{
+                text-align: center;
+                color: #999;
+                margin-top: .05rem;
+            }
+        }
+        .comment-right {
+
+            font-size: 1.15rem;
+            
+            padding-left: 25px;
+            .maintain{
+                margin-top: 1rem;
+                position: relative;
+            }
+            .maintain-title,.attitude-title{
+                font-size: 1.56rem;
+                color: #666;
+                margin-right: 1rem;
+                vertical-align: top;
+                display: inline-block;
+            }
+            .star-wrap{
+                display: inline-block;
+                font-size: 16px;
+                vertical-align: -20%;
+                color: #ffc341;
+                margin-right: .5rem;
+            }
+            .score{
+                color: #ffa028;
+                font-size: 1.5rem;
+                margin-left: 0;
+                margin-right: 0;
+                vertical-align: -20%;
+            }
+        }
+        .btn-group{
+            padding: 0 16px 14px;
+        }
+        
+        .commentbg{
+            background: #f4f4f8;
+            margin-bottom: 50px;
+            .comment-info{
+                .no-comment{
+                    width: 80%;
+                    background-color: #efeff4;
+                    text-align: center;
+                    border: 1px dotted #c7c7cb;
+                    border-radius: 5px;
+                    padding: 10px 0;
+                    margin: 40px auto;
+                    color: #999;
+                    font-size: 15px;
+                }
+            }
+        }
+
+
+    }
+
+}

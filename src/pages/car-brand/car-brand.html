@@ -1,0 +1,40 @@
+<!--
+  Generated template for the CarBrandPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>carBrand</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<div class="black-overlay-top"></div>
+<ion-menu  class="brand-slider" type="overlay" [content]="content" side='right' (ionOpen)="menuOpened()" (ionClose)="menuClosed()">
+  <ion-content>
+    <ion-list radio-group  (ionChange)='jumpcaryear($event)' class="radio-list">
+      <div class="radio-item" *ngFor="let items of model" >
+        <div class="redio-title" >
+          {{items.title}}
+        </div>
+        <ion-item *ngFor="let item of items.content" >
+          <ion-label>{{item}}</ion-label>
+          <ion-radio  value="{{item}}"></ion-radio>
+        </ion-item>
+      </div>
+     
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+<ion-content>
+  <ion-index-list>
+    <ion-index-section *ngFor="let items of brand" [index]="items.title"  >
+      <ion-index-cell menuToggle block *ngFor="let item of items.content" (click)='getbrand(item)'>
+        <img alt=""> {{item}}
+      </ion-index-cell>
+    </ion-index-section>
+  </ion-index-list>
+</ion-content>

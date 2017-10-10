@@ -1,0 +1,74 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>评价详情</ion-title>
+    </ion-navbar>
+    <ion-buttons end class="icon-open" (click)="presentToast()">
+        <ion-icon name="share" class="icon-open"></ion-icon>
+    </ion-buttons>
+</ion-header>
+
+<ion-content>
+    <ion-card class="advice-cont">
+        <ion-item class="advice-header">
+            <ion-avatar item-start>
+                <img src="https://ocpvgmewj.qnssl.com/market/920fengbao/imgs/man29265845e3.png">
+            </ion-avatar>
+            <h2>151****3500 {{i}}</h2>
+            <p class="time">2017-9-23 17:52</p>
+            <div class="advice-header-tips">省¥<span class="advice-header-tips-number">390 </span></div>
+        </ion-item>
+        <ion-grid class="advice-info-table">
+            <ion-row>
+                <ion-col width-30>服务评星</ion-col>
+                <ion-col width-70>5</ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>车型</ion-col>
+                <ion-col>别克 君越</ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>里程</ion-col>
+                <ion-col>30000 km</ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>时间</ion-col>
+                <ion-col>2017-9-23</ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>项目</ion-col>
+                <ion-col>
+                    机油(原厂银美孚5W-30 SN级全合成) <br /> 机油滤清器(原厂件) <br /> 刹车油(原厂件) <br />
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>金额</ion-col>
+                <ion-col><span class="price">￥830</span>
+                    <s>￥1220</s>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <ion-card-content class="advice-card-cont">
+            <p class="car-cont">去时人比较少，10分钟就轮到俺车了。大玻璃窗可以看到保养进程，保养师傅比较用心，接待的小兄弟很仔细，核对了保养项目，花费明细等所，以后还会再来的。</p>
+            <p class="advice-pic">
+                <img src="https://ocpvh3dgz.qnssl.com/public/2017/9/24/3ffdad3784776d6e2da4b4763d36386f.jpg-thumbnail">
+                <img src="https://ocpvh3dgz.qnssl.com/public/2017/9/24/3ffdad3784776d6e2da4b4763d36386f.jpg-thumbnail">
+                <img src="https://ocpvh3dgz.qnssl.com/public/2017/9/24/3ffdad3784776d6e2da4b4763d36386f.jpg-thumbnail">
+                <img src="https://ocpvh3dgz.qnssl.com/public/2017/9/24/3ffdad3784776d6e2da4b4763d36386f.jpg-thumbnail">
+            </p>
+        </ion-card-content>
+        <p class="store">
+            <ion-icon name="pricetag" class="icon-pricetag"></ion-icon>天津银诺臣东风悦达起亚4S店
+        </p>
+        <button class="thumb"><ion-icon name="thumbs-up" class="icon-thumbs-up"></ion-icon>2</button>
+        <!--广告标签-->
+        <div class="ad" [hidden]="adHidden">
+            <span (click)="adIsHidden()">X</span>
+            <div (click)="jumpToAdvice()"></div>
+        </div>
+    </ion-card>
+    <div class="comment-wrap">
+        <div class="all-comment">全部评论</div>
+        <div class="no-comment">暂无评论，快来抢个沙发吧！</div>
+        <button class="btn-join">打开乐车邦APP参与互动</button>
+    </div>
+</ion-content>

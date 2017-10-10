@@ -1,0 +1,78 @@
+page-customer {
+    .list-title{
+        margin: 0;
+        img{
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            vertical-align: middle;
+        }
+    }
+    .row{
+        .col{
+            padding: 0;
+        }
+    }
+    .customer-item .label{
+        margin: 16px 8px 16px 0 !important;
+    }
+    .header-item{
+        padding: 23px 0 22px;
+
+        img{
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 9px;
+        }
+    }
+    .header-item:first-child{
+        border-right:  1px solid #f7f2f2;
+    }
+    .list-ios > .item-block:first-child{
+        border-top: 0.55px solid #f7f2f2;
+    }
+    .list-ios .item-block .item-inner{
+        border-bottom: 0.55px solid #f7f2f2;
+        font-size: 1.4rem;
+        color: #666;
+    }
+    .input-wrapper{
+        .label{
+            div{
+                white-space: normal;
+            }
+        }
+    }
+    .list-title{
+        position: relative;
+        .icon{
+            position: absolute;
+            right: 0px;
+        }
+    }
+    .customer-item{
+        .label{
+            margin: 13px 8px 15px 0;
+        }
+    }
+    
+}
+ion-app.ios [padding], ion-app.ios [padding] .scroll-content{
+    padding: 0
+}
+ion-app.md [padding], ion-app.md [padding] .scroll-content{
+    padding: 0
+}
+.item-ios ion-icon[item-left], .item-ios ion-icon[item-right], .item-ios ion-icon[item-start], .item-ios ion-icon[item-end]{
+         margin-left: 0; 
+        margin-top: 4px;
+        margin-bottom: 8px;
+}
+.item-md ion-icon[item-left], .item-md ion-icon[item-right], .item-md ion-icon[item-start], .item-md ion-icon[item-end]{
+    margin-left: 0;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}

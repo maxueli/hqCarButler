@@ -1,0 +1,164 @@
+page-home-detail {
+    .scroll-content {
+        background: #f4f4f8;
+    }
+    .icon-open {
+        position: absolute;
+        top: 7px;
+        right: 6px;
+        font-size: 2.2rem;
+        color: #424242;
+        z-index: 10;
+    }
+    .advice-cont {
+        margin: 0;
+        width: 100%;
+        box-shadow: none;
+        padding: 0 16px 16px 16px;
+        background: #ffffff;
+        .advice-header {
+            padding: 0;
+            >h2 {
+                font-size: 1.5rem;
+                margin: 3px 0;
+            }
+            .time {
+                color: #999999;
+                font-size: 1.2rem;
+            }
+            .advice-header-tips {
+                right: 0;
+                height: 25px;
+                line-height: 25px;
+                color: #fff;
+                padding-right: 15px;
+                padding-left: 35px;
+                background: linear-gradient(135deg, transparent 17.7px, #fa5a4b 0, #fa5a4b 18.7px, transparent 0, transparent 21.7px, #fa5a4b 0);
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                .advice-header-tips-number {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .advice-info-table {
+            padding: 0;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            color: #999999;
+            ion-row {
+                vertical-align: middle;
+                ion-col {
+                    border-left: 1px solid #ddd;
+                    border-top: 1px solid #ddd;
+                }
+                ion-col:first-child {
+                    text-align: center;
+                }
+                ion-col:last-child {
+                    padding-left: 15px;
+                }
+                .price {
+                    color: #fa5a4b;
+                    font-size: 1.5rem;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .advice-card-cont {
+            padding: 0;
+            .car-cont {
+                font-size: 1.5rem;
+                padding: 6px 0 5px;
+                word-break: break-all;
+                line-height: 1.5;
+                white-space: normal;
+                color: #333333;
+            }
+            .advice-pic {
+                >img {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    background-size: cover;
+                    min-height: 200px;
+                }
+            }
+        }
+        // 门店标签
+        .store {
+            color: #b9b9b9;
+            padding: 0 15px 15px 0;
+            font-size: 1.2rem;
+            .icon-pricetag {
+                margin-right: 5px;
+            }
+        }
+        // 点赞
+        .thumb {
+            margin: 0 auto;
+            border-radius: 22px;
+            padding: 4px 10px 6px;
+            border: 1px #e5e4e4 solid;
+            background-color: #fff;
+            display: block;
+            font-size: 1.6rem;
+            min-width: 85px;
+            color: #999999;
+            .icon-thumbs-up {
+                margin-right: 5px;
+                font-size: 1.5rem;
+            }
+        }
+        .ad {
+            position: fixed;
+            width: 65px;
+            right: 15px;
+            padding-top: 5px;
+            top: 65%;
+            >span {
+                position: absolute;
+                right: 0;
+                top: 0;
+                color: #ff4631; 
+                width: 15px;
+                height: 15px;
+                line-height: 15px;
+                border-radius: 50%;
+                text-align: center;
+                border: 1px solid #ff4631;
+            }
+            >div {
+                width: 60px;
+                height: 65px;
+                background: url(https://img06.lechebangstatic.com/webapp/comment/maintainf44e76e42b.png) no-repeat center center/cover;
+            }
+        }
+    }
+    .comment-wrap {
+        margin-top: 10px;
+        background: #ffffff;
+        .all-comment {
+            font-size: 1.4rem;
+            padding: 5px 15px;
+            box-shadow: 15px 1px 0 rgba(0,0,0,0.04);
+        }
+        .no-comment {
+            font-size: 1.4rem;
+            color: #b9b9b9;
+            text-align: center;
+            padding: 40px 0;
+        }
+        .btn-join {
+            width: 88%;
+            color: #fff;
+            font-size: 1.5rem;
+            border: none;
+            background-color: #fa5a4b;
+            margin: 0 auto 15px;
+            padding: 13px 0;
+            display: block;
+            border-radius: 4px;
+        }
+    }
+}

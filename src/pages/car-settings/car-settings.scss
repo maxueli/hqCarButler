@@ -1,0 +1,29 @@
+page-car-settings{
+    background: #f4f4f8;
+    // *****start=初始化*****
+    .item-ios.item-block .item-inner {
+        padding-right: 0;
+        border-bottom: none;
+    }
+    .list-md .item-block .item-inner {
+        padding-right: 0;
+        border-bottom: none;
+    }
+    // *****end=初始化*****
+    .type-title {
+        width: 100%;
+        height: 2rem;
+        margin: 0;
+        padding: 0 1.5rem;
+        background-color: #efeff4;
+        color: #999; 
+        font-size: 1.2rem;
+    }
+    .type-cont {
+        padding: 0 1.4rem;
+        font-size: 1.5rem;
+    }
+    .checkedradio{
+        color: #fa5a4b;
+    }
+}

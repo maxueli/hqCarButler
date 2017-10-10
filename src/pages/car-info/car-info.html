@@ -1,0 +1,94 @@
+<!--
+  Generated template for the CarInfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>填写爱车信息</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="desc">
+    请完善以下信息便于更精确的为您推荐{{title}}套餐
+  </div>
+  <ion-list class="carinfo-list">
+    <ion-item (click)='gocityList()'>
+      <span class="item-left">城市</span>
+      <span class='city'>{{city}}</span>
+      <ion-icon item-right name="ios-arrow-forward-outline"></ion-icon>
+    </ion-item>
+    <ion-item (click)='jumpcarbrand()'>
+      <span class="item-left">车辆</span>
+      <span *ngIf="car==''" >请添加您的爱车</span>
+      <span *ngIf="car!=''" >{{car}}</span>
+      <ion-icon item-right name="ios-arrow-forward-outline"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <!-- <span class="item-left">购车时间</span> -->
+      <!-- <span>请选择您的购车时间</span> -->
+      <ion-label class="item-left">购车时间</ion-label>
+      <ion-datetime cancelText='取消' doneText='确定' placeholder='请选择您的购车时间' displayFormat="YYYY MM DD" [(ngModel)]="month"></ion-datetime>
+      <ion-icon item-right name="ios-arrow-forward-outline"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <span class="item-left">行驶里程</span>
+      <span>
+              <input type="text" placeholder="公里数">km
+              <ion-icon  name="ios-create-outline"></ion-icon>
+            </span>
+    </ion-item>
+  </ion-list>
+  <div class="pros-intro">
+    <div class="car-title">
+      <h4>
+        100万车主选择乐车邦
+      </h4>
+    </div>
+    <ul class="flex-wrap">
+      <li class="flex">
+        <div class="icon-item">
+          <ion-icon name='ios-alarm'></ion-icon>
+        </div>
+        <div class="txt">
+          低至6.8折
+        </div>
+      </li>
+      <li class="flex">
+        <div class="icon-item">
+          <ion-icon name='ios-alarm'></ion-icon>
+        </div>
+        <div class="txt">
+          原厂保障
+        </div>
+      </li>
+      <li class="flex">
+        <div class="icon-item">
+          <ion-icon name='ios-alarm'></ion-icon>
+        </div>
+        <div class="txt">
+          保修无忧
+        </div>
+      </li>
+      <li class="flex">
+        <div class="icon-item">
+          <ion-icon name='ios-alarm'></ion-icon>
+        </div>
+        <div class="txt">
+          随时可退
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+</ion-content>
+<ion-footer>
+  <div class="nav-bar">
+    去看{{title}}方案{{contacts}}
+  </div>
+</ion-footer>

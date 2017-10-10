@@ -1,0 +1,99 @@
+page-location {
+    background: #f4f4f8;
+    // *****start=初始化*****
+    .item-ios.item-block .item-inner, .list-md .item-block .item-inner {
+        padding-right: 0;
+        border-bottom: none;
+    }
+    .label-ios, .label-md {
+        margin: 0;
+    }
+    .item-divider-md {
+        border-bottom: none;
+    }
+    // *****end=初始化*****
+    .top-wrap {
+        position: absolute;
+        margin-top: 54px;
+        background: #f4f4f8;
+        .top-cont {
+            background-color: #fff;
+            overflow: hidden;
+            margin: 0;
+            padding: 10px 15px 10px 15px;
+            margin-top: 10px;
+            .icon-pin {
+                margin-right: 10px;
+            }
+        }
+        .hot-city {
+            padding: 0;
+            overflow: hidden;
+            >p {
+                font-size: 1.2rem;
+                padding-left: 15px;
+            }
+            >div {
+                padding: 0 20px 0 15px;
+                >p {
+                    margin: 0;
+                    width: 21.8%;
+                    height: 36px;
+                    line-height: 36px;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    border: 1px #e3e3e4 solid;
+                    background-color: #fff;
+                    border-radius: 3px;
+                    float: left;
+                    margin-right: .5rem;
+                    margin-bottom: .8rem;
+                }
+            }
+        }
+    }
+    .content{
+        margin-top: 235px;
+        background: #f4f4f8;
+        .scroll-content {
+            margin-top: 0 !important;
+            height: calc(100% - 235px);
+        }
+        .cityItem {
+            ion-item-divider {
+                font-size: 1.2rem;
+                color: #666;
+            }
+            ion-item {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .index-list-nav{
+        background-color: transparent !important;
+        .index-bar{
+            font-size: 1.5rem !important;
+            color: #8a8a88 !important;
+        }
+        .index-list-nav-activate{
+            color: #8a8a88 !important;
+        }
+    }
+    .index-section-index,.menu-list .item-divider{
+        padding: 0 0 0 1.5rem !important;
+        font-size: 1.2rem;
+        color: #999;
+        height: 20px;
+        line-height: 20px;
+        background: #f4f4f8 !important;
+    }
+    .index-cell{
+        padding-left: 0 !important;
+        height: 50px;
+        .index-cell-item{
+            padding-left: 1.5rem;
+            height: 50px;
+            font-size: 1.5rem;
+        }
+    }
+}

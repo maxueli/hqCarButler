@@ -1,0 +1,263 @@
+page-home {
+    // 初始化item-inner样式
+    .item-ios.item-block .item-inner {
+        padding-right: 0;
+        border-bottom: none;
+    }
+    // bar左侧定位按钮
+    .bar-buttons>button{
+        background: transparent;
+    }
+    .scroll-content {
+        background: #f4f4f8;
+        min-width: 320px;
+        height: 100%;
+    }
+    .icon-location {
+        color: #333;
+        button {
+            font-size: 1.5rem;
+        }
+    }
+    // .toolbar-title-md {
+    //     padding: 0 12px;
+    //     font-size: 18px;
+    //     color: #424242;
+    //     text-align: center;
+    // }
+    // .toolbar-title-ios {
+    //     text-align: center;
+    //     font-size: 18px;
+    //     font-weight: normal;
+    //     color: #000;
+    //     pointer-events: auto;
+    // }
+    // 导航菜单
+    .nav-cont {
+        background: #ffffff;
+        padding: 1rem .07rem 1rem .07rem;
+        text-align: center;
+        .discount-tips {
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: #ff3232;
+            color: #fff;
+            border: 1px #fff solid;
+            border-radius: 1rem;
+            padding: 0 .3rem;
+            line-height: 1.2;
+            font-size: 1.2rem;
+        }
+        .nav-pic {
+            width: 70%;
+            background-size: cover;
+            margin: 0 auto .04rem;
+        }
+        .nav-title {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+    }
+    // 头条
+    .headlines {
+        width: 100%;
+        height: 44px;
+        line-height: 44px;
+        border-top: 1px solid #f1f1f1;
+        border-bottom: 1px solid #f1f1f1;
+        overflow: hidden;
+        .headlines-title {
+            width: 20%;
+            height: 44px;
+            float: left;
+            overflow: hidden;
+            background: #ffffff;
+            text-align: center;
+            .headlines-title-logo {
+                padding: 0;
+                margin: 0;
+            }
+            .headlines-title-logo img {
+                height: 30px;
+                vertical-align: middle;
+            }
+        }
+        .headlines-cont {
+            background: #ffffff;
+            width: 80%;
+            height: 44px;
+            float: left;
+            .headlines-cont-txt {
+                display: inline-block;
+                font-size: 1.3rem;
+            }
+        }
+        .col {
+            padding: 0;
+        }
+        .slide-zoom {
+            text-align: left;
+            margin-left: 5%;
+            display: block;
+            width: 100%;
+        }
+    }
+    // 相关活动
+    .activities {
+        width: 100%;
+        margin-top: .1rem;
+        background-color: #fff;
+        box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+        margin: 10px 0;
+        overflow: hidden;
+        .activity-item {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 50%;
+            padding: 15px 0 5px 25px;
+            float: left;
+            font-size: 1.4rem;
+            border-right: 1px solid #f1f1f1;
+            .activity-pic {
+                height: 60px;
+                width: 65px;
+                margin-top: -0.5rem;
+                background-size: cover;
+                float: right;
+            }
+            .show-dots {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .activity-tip {
+                color: #fa5a4b;
+                margin-top: .02rem;
+                font-size: 1.4rem;
+            }
+            .show-dots {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        .activity-item:nth-child(n + 3) {
+            border-top: 1px solid #f1f1f1;
+        }
+    }
+    // 热门保养
+    .hot {
+        padding: 0;
+        .hot-title {
+            font-size: 1.6rem;
+            padding-left: 15px;
+        }
+        .add-car {
+            font-size: 1.4rem;
+            color: #ffa028;
+            float: right;
+            margin-top: .02rem;
+            .icon-add {
+                margin-right: 3px;
+            }
+        }
+    }
+    .brand-cont {
+        background: #ffffff;
+        overflow: hidden;
+        width: 100%;
+        .brand-cont-item {
+            display: inline-block;
+            width: 24%;
+            text-align: center;
+            margin: 5px 0;
+            .brand-pic {
+                width: 70%;
+                background-size: cover;
+                margin: 0 auto .04rem;
+                vertical-align: middle;
+            }
+            .brand-price {
+                margin: 0;
+                color: #fa5a4b;
+                font-size: 1.6rem;
+            }
+        } 
+    }
+    .more {
+        padding: 0;
+        border-bottom: none;
+        margin-bottom: 10px;
+        .item-ios.item-block div.item-inner {
+            padding-right: 8px;
+            border-bottom: none;
+        }
+        .more-brands {
+            float: right;
+            font-size: 1.4rem;
+            color: #999999;
+        }
+    }
+    // 车主评价
+    .advice {
+        padding: 0;
+        .advice-title {
+            font-size: 1.6rem;
+            padding-left: 15px;
+        }
+    }
+    .advice-list{
+        padding: 0;
+        margin-bottom: 10px;
+        border-bottom: none;
+        >div.item-inner {
+            border-bottom: none;
+        }
+        .advice-cont {
+            margin: 0;
+            width: 100%;
+            box-shadow: none;
+            .time {
+                color: #999999;
+                font-size: 1.2rem;
+            }
+            .advice-card-cont {
+                padding-right: 0;
+                .car-type {
+                    color: #999999;
+                    font-size: 1.2rem;
+                    margin-bottom: 10px;
+                    >span {
+                        color: #fa5a4b;
+                    }
+                }
+                .car-cont {
+                    white-space: normal;
+                    >span {
+                        color: #64739c;
+                    }
+                }
+                .advice-pic {
+                    text-align: center;
+                    width: 100%;
+                    overflow: hidden;
+                    >img {
+                        width: 30%;
+                        float: left;
+                        margin: 1% 1.5%;
+                    }
+                }
+            }
+            .store {
+                color: #64739c;
+                padding: 0 15px 15px 15px;
+                font-size: 1.2rem;
+                .icon-pricetag {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    
+}

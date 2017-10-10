@@ -1,0 +1,94 @@
+page-car-brand {
+    .index-section-index,.menu-list .item-divider{
+        padding: 0 0 0 2rem !important;
+        // margin: 0 2rem;
+        font-size: 1.2rem;
+        color: #999;
+        height: 20px;
+        line-height: 20px;
+    }
+    .index-cell{
+        padding-left: 0 !important;
+        height: 50px;
+        .index-cell-item{
+            padding-right: 20px;
+            height: 50px;
+            font-size: 1.5rem;
+
+            img{
+                width: 3.5rem;
+                height: 3.5rem;
+                border: 1px solid #000;
+                margin: 0 20px;
+            }
+        }
+    }
+    .index-list-nav{
+        background-color: transparent !important;
+        .index-bar{
+            font-size: 1.5rem !important;
+        }
+        .index-list-nav-activate{
+            color: #000 !important;
+        }
+    }
+    .menu-list{
+        
+        .item-block{
+            // padding-left: 0 !important;
+            font-size: 1.5rem;
+            height: 50px;
+            .item-inner{
+                height: 50px;
+                border-bottom: 0.55px solid rgba(0,0,0,0.04);
+            }
+        }
+    }
+   
+}
+.radio-list{
+    margin: -1px 0 0px !important;
+    .redio-title{
+        background-color: #fafafa;
+        padding: 0 0 0 20px !important;
+        font-size: 1.2rem;
+        color: #999;
+        height: 20px;
+        line-height: 20px;
+    }
+    .item-block:last-child{
+        border-bottom: 0 !important;
+    }
+    .item-cover {
+        padding: 0 !important;
+    }
+    .item-block{
+        min-height: 50px !important;
+        // padding: 1.5rem 1.4rem;
+        font-size: 1.5rem;
+        padding-left: 20px !important;
+    }
+    .radio-item{
+        .item-block:last-child{
+            .item-inner{
+                border-bottom: 0 !important;
+            }
+        }
+    } 
+}
+// 侧滑背景遮罩
+// .black-overlay, .black-overlay-top {
+//     background-color: rgba(0, 0, 0, 0.75);
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     z-index: 402;
+// }
+// 侧滑
+.brand-slider {
+    
+    top: 57px;
+    
+}

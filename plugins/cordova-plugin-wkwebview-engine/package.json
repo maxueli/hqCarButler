@@ -1,0 +1,97 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-wkwebview-engine@git+https://github.com/ionic-team/cordova-plugin-wkwebview-engine.git",
+        "scope": null,
+        "escapedName": "cordova-plugin-wkwebview-engine",
+        "name": "cordova-plugin-wkwebview-engine",
+        "rawSpec": "git+https://github.com/ionic-team/cordova-plugin-wkwebview-engine.git",
+        "spec": "git+https://github.com/ionic-team/cordova-plugin-wkwebview-engine.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:ionic-team/cordova-plugin-wkwebview-engine.git",
+          "sshUrl": "git+ssh://git@github.com/ionic-team/cordova-plugin-wkwebview-engine.git",
+          "httpsUrl": "git+https://github.com/ionic-team/cordova-plugin-wkwebview-engine.git",
+          "gitUrl": "git://github.com/ionic-team/cordova-plugin-wkwebview-engine.git",
+          "shortcut": "github:ionic-team/cordova-plugin-wkwebview-engine",
+          "directUrl": "https://raw.githubusercontent.com/ionic-team/cordova-plugin-wkwebview-engine/master/package.json"
+        }
+      },
+      "/Volumes/M/CODE/hqCarButler/node_modules"
+    ]
+  ],
+  "_from": "git+https://github.com/ionic-team/cordova-plugin-wkwebview-engine.git",
+  "_id": "cordova-plugin-wkwebview-engine@1.1.6",
+  "_inCache": true,
+  "_location": "/cordova-plugin-wkwebview-engine",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-wkwebview-engine@git+https://github.com/ionic-team/cordova-plugin-wkwebview-engine.git",
+    "scope": null,
+    "escapedName": "cordova-plugin-wkwebview-engine",
+    "name": "cordova-plugin-wkwebview-engine",
+    "rawSpec": "git+https://github.com/ionic-team/cordova-plugin-wkwebview-engine.git",
+    "spec": "git+https://github.com/ionic-team/cordova-plugin-wkwebview-engine.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:ionic-team/cordova-plugin-wkwebview-engine.git",
+      "sshUrl": "git+ssh://git@github.com/ionic-team/cordova-plugin-wkwebview-engine.git",
+      "httpsUrl": "git+https://github.com/ionic-team/cordova-plugin-wkwebview-engine.git",
+      "gitUrl": "git://github.com/ionic-team/cordova-plugin-wkwebview-engine.git",
+      "shortcut": "github:ionic-team/cordova-plugin-wkwebview-engine",
+      "directUrl": "https://raw.githubusercontent.com/ionic-team/cordova-plugin-wkwebview-engine/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/ionic-team/cordova-plugin-wkwebview-engine.git#0ba9a65318d3b951755d7455df2bc10670b03162",
+  "_shasum": "9f3802410dbebf5308834d265382078a54c5ec82",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-wkwebview-engine@git+https://github.com/ionic-team/cordova-plugin-wkwebview-engine.git",
+  "_where": "/Volumes/M/CODE/hqCarButler/node_modules",
+  "author": {
+    "name": "Apache Cordova"
+  },
+  "bugs": {
+    "url": "https://github.com/ionic-team/cordova-plugin-wkwebview-engine/issues"
+  },
+  "dependencies": {},
+  "description": "The official Apache Cordova WKWebView Engine Plugin",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-semistandard": "^11.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "gitHead": "0ba9a65318d3b951755d7455df2bc10670b03162",
+  "homepage": "https://github.com/ionic-team/cordova-plugin-wkwebview-engine#readme",
+  "keywords": [
+    "cordova",
+    "wkwebview"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "name": "cordova-plugin-wkwebview-engine",
+  "optionalDependencies": {},
+  "readme": "# DEPRECATED\n\nRepo moved to: [https://github.com/ionic-team/cordova-plugin-ionic-webview](https://github.com/ionic-team/cordova-plugin-ionic-webview)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ionic-team/cordova-plugin-wkwebview-engine.git"
+  },
+  "scripts": {
+    "eslint": "eslint src",
+    "objc-tests": "cd tests/ios && npm test",
+    "preobjc-tests": "cd tests/ios && npm install",
+    "test": "npm run eslint && npm run objc-tests"
+  },
+  "version": "1.1.6"
+}
